@@ -1,0 +1,68 @@
+*, *::before, *::after {
+  font-family: 'Mynerve', cursive;
+  font-weight: bold;
+}
+
+body{
+  background-image: url("calc-bg.jpg");
+  background-size: 1540px 760px;
+  background-repeat: no-repeat;
+}
+
+.Container {
+  display: grid;
+  align-content: center;
+  grid-template-columns: repeat(4, 90px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 90px);
+  margin-top: 50px;
+  margin-left: 920px;
+  margin-right: 170px;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, .75) ;
+  border-radius: 15px;
+  grid-gap: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+ padding-top: 18px;
+ padding-bottom: 10px;
+}
+
+.Container > button {
+  cursor: pointer;
+  font-size: 2rem;
+  outline: none;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255);
+  border-radius: 20px;
+}
+
+.Container > button:hover {
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.result {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.result .or{
+  color: rgba(255, 255, 255, .75);
+  font-size: 1.5rem;
+}
+
+.result .pr{
+  color: white;
+  font-size: 2.5rem;
+}
